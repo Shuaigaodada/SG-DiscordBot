@@ -29,10 +29,6 @@ def load_json_as_list(file_name: str) -> List[str | int]:
 resources.extension.add("list_json", load_json_as_list, _property=True, _async=False)
 resources.get("configs").load("userdata.json").list_json
 ```
-1.base类:
-    i.   其中有一个值为 _CONST_BASE 为src的完整路径
-    ii.  base值是动态的, 他应该因为resources.get方法而变动
-    iii. 在加载完成后必须恢复 base, 或是每次使用 get 时恢复base
 """
 import os as _os
 import json as _json
