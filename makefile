@@ -24,3 +24,4 @@ clean:
 	find ./src -type d -name "__pycache__" -exec rm -rf {} \;
 	find ./tests -type d -name "__pycache__" -exec rm -rf {} \;
 	find ./logs -type f -name "*.log" -exec rm -rf {} \;
+	clear||cls
